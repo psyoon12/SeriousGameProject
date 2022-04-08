@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NpcMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rigid;
     [SerializeField] bool leftLeft = false;
     [SerializeField] bool moving = true;
+    [SerializeField] bool enter = true;
     [SerializeField] float movement;
     [SerializeField] float force = -2f;
+    [SerializeField] Text dialogue;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +24,23 @@ public class NpcMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width/2, Screen.height/2));
+        Vector2 screenMid = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width/2, Screen.height/2));
+        Vector2 screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
         movement = Input.GetAxis("Horizontal");
-        if (transform.position.x<=screenBounds.x){
+        if (transform.position.x<=screenMid.x+3){
             leftLeft=true;
             moving=false;
         }
 
         if  (Input.GetKey("y")||Input.GetKey("n")){
-            Debug.Log("y pressed");
+            Debug.Log("y or n pressed");
             moving=true;
+            dialogue.text="";
+            enter=false;
+        }
+
+        if (!enter&&transform.position.x>=screenBounds.x){
+            Destroy(gameObject);
         }
     }
 
@@ -39,7 +49,7 @@ public class NpcMovement : MonoBehaviour
             move();
         } else{
             rigid.velocity = Vector2.zero;
-            rigid.Sleep();
+            dialogue.text="this is going to be ......";
         }
     }
 
@@ -51,10 +61,4 @@ public class NpcMovement : MonoBehaviour
         }
         rigid.velocity = new Vector2(movement - (force), 0);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
-
 }
