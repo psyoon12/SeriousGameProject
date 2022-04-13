@@ -42,7 +42,7 @@ public class NpcMovement : MonoBehaviour
         if  (Input.GetKey("y")||Input.GetKey("n")){
             Debug.Log("y or n pressed");
             moving=true;
-            animator.SetBool("wait", false);
+            animator.SetBool("wait", false)
             dialogue.text="";
             enter=false;
         }
@@ -69,5 +69,4 @@ public class NpcMovement : MonoBehaviour
         }
         rigid.velocity = new Vector2(movement + force, 0);
     }
-
 }
