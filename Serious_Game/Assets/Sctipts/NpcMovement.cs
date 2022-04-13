@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class NpcMovement : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class NpcMovement : MonoBehaviour
     [SerializeField] bool enter = true;
     [SerializeField] float movement;
     [SerializeField] float force = -2f;
-    [SerializeField] Text dialogue;
+    [SerializeField] TextMeshProUGUI dialogue;
     [SerializeField] Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class NpcMovement : MonoBehaviour
         }
         GameObject canvasObject = GameObject.FindGameObjectWithTag("Canvas");
         Transform textTr = canvasObject.transform.Find("Dialogue");
-        dialogue = textTr.GetComponent<Text>();
+        dialogue = textTr.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
