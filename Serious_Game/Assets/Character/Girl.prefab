@@ -141,7 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigid: {fileID: 0}
-  dText: {fileID: 1403123437835150223, guid: ba5c5a1856c204698bfc1b0f5a5a1ab9, type: 3}
   leftLeft: 0
   moving: 1
   enter: 1
