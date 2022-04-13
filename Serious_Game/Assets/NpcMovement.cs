@@ -12,13 +12,19 @@ public class NpcMovement : MonoBehaviour
     [SerializeField] float movement;
     [SerializeField] float force = -2f;
     [SerializeField] Text dialogue;
+    [SerializeField] Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         if (rigid == null){
             rigid = GetComponent<Rigidbody2D>();
         }
-        
+        if (animator==null){
+            animator = gameObject.GetComponent<Animator>();
+        }
+        GameObject canvasObject = GameObject.FindGameObjectWithTag("Canvas");
+        Transform textTr = canvasObject.transform.Find("Dialogue");
+        dialogue = textTr.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -30,11 +36,13 @@ public class NpcMovement : MonoBehaviour
         if (transform.position.x<=screenMid.x+3){
             leftLeft=true;
             moving=false;
+            animator.SetBool("wait", true);
         }
 
         if  (Input.GetKey("y")||Input.GetKey("n")){
             Debug.Log("y or n pressed");
             moving=true;
+            animator.SetBool("wait", false);
             dialogue.text="";
             enter=false;
         }
@@ -59,6 +67,7 @@ public class NpcMovement : MonoBehaviour
             leftLeft=false;
             transform.Rotate(0, 180, 0);
         }
-        rigid.velocity = new Vector2(movement - (force), 0);
+        rigid.velocity = new Vector2(movement + force, 0);
     }
+
 }
