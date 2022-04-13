@@ -48,7 +48,7 @@ public class NpcMovement : MonoBehaviour
             enter=false;
         }
 
-        if (!enter&&transform.position.x>=screenBounds.x){
+        if (!enter&&transform.position.x-1>=screenBounds.x){
             Destroy(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
