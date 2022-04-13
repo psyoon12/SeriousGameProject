@@ -5,19 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: e4987667808c14438a87951405787467
   - enabled: 1
-    path: Assets/Scenes/dayMorning.unity
-    guid: 9d354f49b97334af3ba70820b6cedb1b
-  - enabled: 1
-    path: Assets/Scenes/dayNoon.unity
-    guid: 1fcb7c43b833145029e7e2e1f208efb4
-  - enabled: 1
-    path: Assets/Scenes/dayAfternoon.unity
-    guid: 210791f12658941baaca889a9f8ba69d
-  - enabled: 1
-    path: Assets/Scenes/dayNight.unity
-    guid: 1b361c516c8864531bf378f838075732
+    path: Assets/Scenes/Main.unity
+    guid: 881ab18ed9ead470da8f9618f0d9f168
   m_configObjects: {}

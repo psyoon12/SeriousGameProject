@@ -36,13 +36,13 @@ public class NpcMovement : MonoBehaviour
         if (transform.position.x<=screenMid.x+3){
             leftLeft=true;
             moving=false;
-            setWaitTrue();
+            animator.SetBool("wait", true);
         }
 
         if  (Input.GetKey("y")||Input.GetKey("n")){
             Debug.Log("y or n pressed");
             moving=true;
-            setWaitFalse();
+            animator.SetBool("wait", false);
             dialogue.text="";
             enter=false;
         }
@@ -68,14 +68,6 @@ public class NpcMovement : MonoBehaviour
             transform.Rotate(0, 180, 0);
         }
         rigid.velocity = new Vector2(movement + force, 0);
-    }
-
-    void setWaitFalse(){
-        animator.SetBool("wait", false);
-    }
-
-    void setWaitTrue(){
-        animator.SetBool("wait", true);
     }
 
 }
