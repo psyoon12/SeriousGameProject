@@ -427,8 +427,8 @@ Canvas:
   m_GameObject: {fileID: 246615980}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1303,7 +1303,7 @@ GameObject:
   - component: {fileID: 1990744000}
   - component: {fileID: 1990743999}
   m_Layer: 0
-  m_Name: Afternoon
+  m_Name: Night
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1369,8 +1369,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990743998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.034, y: 0.0034, z: 0}
-  m_LocalScale: {x: 17.306648, y: 10.2321615, z: 1}
+  m_LocalPosition: {x: -0.087, y: 0.0918, z: 0}
+  m_LocalScale: {x: 19.111156, y: 11.117321, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

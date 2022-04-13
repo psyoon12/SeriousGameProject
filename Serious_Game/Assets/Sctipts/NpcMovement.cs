@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NpcMovement : MonoBehaviour
 {
@@ -49,6 +50,7 @@ public class NpcMovement : MonoBehaviour
 
         if (!enter&&transform.position.x>=screenBounds.x){
             Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
