@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6004307826831314914}
   - component: {fileID: 6004307826831314917}
   - component: {fileID: 6004307826831314919}
-  - component: {fileID: 6229683822739950750}
+  - component: {fileID: 7892854608268194425}
   m_Layer: 0
   m_Name: soldier
   m_TagString: Untagged
@@ -128,7 +128,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6229683822739950750
+--- !u!114 &7892854608268194425
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,15 +137,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6004307826831314918}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b156804bb6fc140b1a55b04d03ddd7fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f53d9422a3a32440cbaf9432830c6979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigid: {fileID: 0}
-  dText: {fileID: 1403123437835150223, guid: ba5c5a1856c204698bfc1b0f5a5a1ab9, type: 3}
   leftLeft: 0
   moving: 1
   enter: 1
   movement: 0
   force: -2
-  dialogue: {fileID: 9122551824420205657, guid: 2a51bff2f22ee421ea58a65954a8f74e, type: 3}
+  dialogue: {fileID: 0}
   animator: {fileID: 0}

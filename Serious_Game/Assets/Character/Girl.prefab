@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4844343284920694310}
   - component: {fileID: 8749305645504146662}
   - component: {fileID: 6967478056371712086}
-  - component: {fileID: 2713689229906481845}
+  - component: {fileID: 695094252640314407}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Untagged
@@ -128,7 +128,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2713689229906481845
+--- !u!114 &695094252640314407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,15 +137,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8699266187104809981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b156804bb6fc140b1a55b04d03ddd7fc, type: 3}
+  m_Script: {fileID: 11500000, guid: dad867e01d29d497eaa189c4d0aaf0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigid: {fileID: 0}
-  dText: {fileID: 1403123437835150223, guid: ba5c5a1856c204698bfc1b0f5a5a1ab9, type: 3}
   leftLeft: 0
   moving: 1
   enter: 1
   movement: 0
   force: -2
-  dialogue: {fileID: 9122551824420205657, guid: 2a51bff2f22ee421ea58a65954a8f74e, type: 3}
+  dialogue: {fileID: 0}
   animator: {fileID: 0}
