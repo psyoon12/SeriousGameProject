@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 444467094}
   - component: {fileID: 444467095}
   m_Layer: 0
-  m_Name: LeftBoundary
+  m_Name: TopBoundary
   m_TagString: LeftBoundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,9 +171,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -10.933943, y: 5.0796833}
-  - {x: -10.920498, y: 1.4025296}
-  - {x: -9.63223, y: 1.4076848}
+  - {x: -11.176629, y: 6.431796}
+  - {x: -11.123662, y: 1.5619}
+  - {x: -9.63223, y: 1.5898224}
   - {x: -9.66068, y: 2.5166903}
   - {x: -8.686877, y: 2.4899838}
   - {x: -8.6634445, y: 1.4437909}
@@ -182,14 +182,91 @@ EdgeCollider2D:
   - {x: -7.423159, y: 1.7932485}
   - {x: -7.407015, y: 1.4527656}
   - {x: -2.2002387, y: 1.4732425}
-  - {x: -2.2164757, y: 5.00987}
-  - {x: -1.0371302, y: 4.995861}
-  - {x: -0.67242247, y: 3.9243655}
-  - {x: 5.8568354, y: 3.9226377}
-  - {x: 5.939349, y: 1.3217664}
-  - {x: 11.256704, y: 1.4013351}
-  - {x: 11.200699, y: 1.4250172}
-  - {x: 11.7781925, y: 1.5742352}
+  - {x: -2.258836, y: 3.5060809}
+  - {x: -1.4077936, y: 3.6145294}
+  - {x: -1.3760123, y: 5.0594015}
+  - {x: -0.69360256, y: 5.046912}
+  - {x: -0.66524374, y: 3.9526942}
+  - {x: 5.9839163, y: 4.0285387}
+  - {x: 5.939349, y: 1.5123878}
+  - {x: 11.150804, y: 1.5072359}
+  - {x: 11.073618, y: 6.6776886}
+  - {x: -11.120812, y: 6.521426}
+  - {x: -10.568477, y: 6.516964}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &837338059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837338060}
+  - component: {fileID: 837338061}
+  m_Layer: 0
+  m_Name: BottomBoundary
+  m_TagString: BottomBoundary
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &837338060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837338059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1296603882}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &837338061
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837338059}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -11.122413, y: 4.577974}
+  - {x: -11.141309, y: -2.9776363}
+  - {x: -9.51931, y: -2.9973168}
+  - {x: -9.48268, y: -2.7589078}
+  - {x: -9.008101, y: -2.735416}
+  - {x: -8.881818, y: -2.9926484}
+  - {x: -8.101487, y: -3.0142734}
+  - {x: -8.105838, y: -4.962247}
+  - {x: -6.6373205, y: -4.9945216}
+  - {x: -6.586808, y: -3.0328443}
+  - {x: -5.835194, y: -3.06315}
+  - {x: -5.855347, y: -2.5834942}
+  - {x: -4.822863, y: -2.5691113}
+  - {x: -4.7803497, y: -2.9876316}
+  - {x: -4.4131174, y: -2.9902658}
+  - {x: -4.413999, y: -1.7492827}
+  - {x: -1.5342326, y: -1.737421}
+  - {x: -1.4904728, y: -3.0481014}
+  - {x: 5.344364, y: -3.0764146}
+  - {x: 5.393707, y: -4.952153}
+  - {x: 11.110308, y: -5.0322704}
+  - {x: 11.119395, y: 6.592552}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -328,6 +405,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 444467094}
+  - {fileID: 837338060}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -488,9 +566,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03082025, y: 0.011699021}
+  m_Offset: {x: 0.030820131, y: 0.011699021}
   serializedVersion: 2
-  m_Radius: 0.4563452
+  m_Radius: 0.2896042
 --- !u!1 &1755955733
 GameObject:
   m_ObjectHideFlags: 0
