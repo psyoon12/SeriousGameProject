@@ -24,4 +24,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed* Time.fixedDeltaTime);
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
 }
