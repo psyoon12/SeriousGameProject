@@ -58,6 +58,15 @@ public class JumpMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(moveSpeed * xInput, rb.velocity.y);
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Collectable"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
 
     void FlipPlayer()
     {
