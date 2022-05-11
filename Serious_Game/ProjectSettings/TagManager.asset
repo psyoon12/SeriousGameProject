@@ -6,6 +6,8 @@ TagManager:
   tags:
   - LeftBoundary
   - BottomBoundary
+  - Canvas
+  - Collectable
   layers:
   - Default
   - TransparentFX
