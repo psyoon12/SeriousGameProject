@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -62,6 +63,7 @@ public class Dialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
+        SceneManager.LoadScene("LandMini");
     }
 
     IEnumerator Writing()
@@ -100,6 +102,7 @@ public class Dialogue : MonoBehaviour
             {
                 ToggleNotification(true);
                 EndDialogue();
+
             }
         }
     }

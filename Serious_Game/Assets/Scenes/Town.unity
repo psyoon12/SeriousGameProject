@@ -875,25 +875,58 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.74
       objectReference: {fileID: 0}
+    - target: {fileID: 759057582093348001, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_fontSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057582093348001, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_margin.w
+      value: 1.6521186
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057582093348001, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_margin.y
+      value: 1.2734523
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057582093348001, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_margin.z
+      value: 7.311344
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057582238553065, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0942659
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057582238553065, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3658242
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057582238553065, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5973
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057582238553065, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1813
+      objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: writingSpeed
       value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: dialogues.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Hello
+      value: 'Hello, land pollution is one of the biggest problems that the world
+        faces today. Please join me and prevent our land from being polluted.  '
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: 'How are you? '
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Are you up for the challege?
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
