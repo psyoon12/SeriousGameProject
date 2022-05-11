@@ -8,8 +8,11 @@ public class JumpMovement : MonoBehaviour
     public float moveSpeed;
     float xInput, yInput;
 
+    public Animator animator;
+
     Rigidbody2D rb;
     SpriteRenderer sp;
+    Vector2 movement;
 
     public float jumpForce;
 
@@ -36,6 +39,9 @@ public class JumpMovement : MonoBehaviour
     {
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Vertical");
+
+        animator.SetFloat("Horizontal", xInput);
+        animator.SetFloat("Vertical", yInput);
 
         transform.Translate(xInput * moveSpeed, yInput * moveSpeed, 0);
 
