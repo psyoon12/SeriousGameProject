@@ -315,6 +315,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 759057580668055476, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_PrefabInstance: {fileID: 1413033501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &349865022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759057581188361441, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 770569749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &444467093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,13 +1746,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d97f0d2092d41119d87c3d0a9eb7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  window: {fileID: 1638454426}
-  notification: {fileID: 1690374249}
-  dialogueText: {fileID: 207887594}
+  window: {fileID: 1821362577}
+  notification: {fileID: 349865022}
+  dialogueText: {fileID: 1946685900}
   dialogues:
   - Hello stranger! Did you know air is a very important aspect in our life. Join
     me and my journey to learn more about Air pollution.
-  writingSpeed: 0.1
+  writingSpeed: 0.01
 --- !u!1 &1755955733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +1942,11 @@ PrefabInstance:
       objectReference: {fileID: 219718329}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40b5736a17478481387ae7c3042c26cb, type: 3}
+--- !u!1 &1821362577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759057581286960662, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 770569749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1910703186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,6 +2031,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1946685900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 759057582093348001, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 770569749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &759057581140979889
 PrefabInstance:
   m_ObjectHideFlags: 0
