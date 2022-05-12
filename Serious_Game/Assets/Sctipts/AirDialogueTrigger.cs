@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialogue : MonoBehaviour
+public class AirDialogue : MonoBehaviour
 {
     public GameObject window;
     // notification bubble when player walk close to the NPCs
@@ -63,7 +63,7 @@ public class Dialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
-        SceneManager.LoadScene("LandMini");
+        SceneManager.LoadScene("AirMini");
         
         
         /*
@@ -117,7 +117,7 @@ public class Dialogue : MonoBehaviour
             {
                 ToggleNotification(true);
                 EndDialogue();
-               
+                
             
             }
         }

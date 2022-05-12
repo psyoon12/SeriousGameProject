@@ -235,6 +235,22 @@ PrefabInstance:
       value: 0.5159
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: man
+      value: 
+      objectReference: {fileID: 991969884}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: monk
+      value: 
+      objectReference: {fileID: 1057160715}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: thief
+      value: 
+      objectReference: {fileID: 797295031}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: dancer
+      value: 
+      objectReference: {fileID: 1574298798}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: writingSpeed
       value: 0.01
       objectReference: {fileID: 0}
@@ -534,6 +550,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.24
       objectReference: {fileID: 0}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: man
+      value: 
+      objectReference: {fileID: 991969884}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: monk
+      value: 
+      objectReference: {fileID: 1057160715}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: thief
+      value: 
+      objectReference: {fileID: 797295031}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: dancer
+      value: 
+      objectReference: {fileID: 1574298798}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: writingSpeed
       value: 0.01
@@ -1301,6 +1333,22 @@ PrefabInstance:
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: man
+      value: 
+      objectReference: {fileID: 991969884}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: monk
+      value: 
+      objectReference: {fileID: 1057160715}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: thief
+      value: 
+      objectReference: {fileID: 797295031}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: dancer
+      value: 
+      objectReference: {fileID: 1574298798}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: writingSpeed
       value: 0.01
       objectReference: {fileID: 0}
@@ -2007,6 +2055,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.1813
       objectReference: {fileID: 0}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: man
+      value: 
+      objectReference: {fileID: 991969884}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: monk
+      value: 
+      objectReference: {fileID: 1057160715}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: thief
+      value: 
+      objectReference: {fileID: 797295031}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: dancer
+      value: 
+      objectReference: {fileID: 1574298798}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: writingSpeed
       value: 0.01
