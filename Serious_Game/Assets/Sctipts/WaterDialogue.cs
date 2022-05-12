@@ -63,7 +63,7 @@ public class WaterDialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
-        SceneManager.LoadScene("WaterMini");
+        SceneManager.LoadScene("LightMini");
         
         
         /*

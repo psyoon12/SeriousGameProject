@@ -251,34 +251,47 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1574298798}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: window
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: notification
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: writingSpeed
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: dialogues.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: dialogues.Array.data[0]
       value: Hello Love! Would you care to join me for a lovely walk down to the
         beach. Just kidding, lets go learn about light pollution.
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
 --- !u!4 &163971065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 759057580668055476, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_PrefabInstance: {fileID: 770569749}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &163971066 stripped
+--- !u!114 &207887594 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
-  m_PrefabInstance: {fileID: 770569749}
+  m_CorrespondingSourceObject: {fileID: 759057582093348001, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 107038788}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e80f4b841635e49d7b20441726568219, type: 3}
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &219718329 stripped
@@ -579,7 +592,8 @@ PrefabInstance:
       value: Hello stranger! Did you know air is a very important aspect in our life.
         Join me and my journey to learn more about Air pollution.
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
 --- !u!1 &797295031
 GameObject:
@@ -1001,17 +1015,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 759057580668055476, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_PrefabInstance: {fileID: 107038788}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &994677527 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
-  m_PrefabInstance: {fileID: 107038788}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e80f4b841635e49d7b20441726568219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1009835781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 759057580668055476, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
@@ -1041,7 +1044,7 @@ GameObject:
   - component: {fileID: 1057160717}
   - component: {fileID: 1057160716}
   - component: {fileID: 1057160721}
-  - component: {fileID: 1057160720}
+  - component: {fileID: 1057160722}
   m_Layer: 0
   m_Name: Monk
   m_TagString: Monk
@@ -1163,19 +1166,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1057160720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057160715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4bb8af8dfcce4fc88dc24617e5c8c9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueScript: {fileID: 163971066}
 --- !u!70 &1057160721
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1192,6 +1182,43 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.2, y: 0.3}
   m_Direction: 0
+--- !u!114 &1057160722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057160715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4848bdb84bdc140e1aeac07fed09043d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AirdialogueScript: {fileID: 1703979458}
+--- !u!1 &1292312338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759057580668055477, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 107038788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1292312339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292312338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2648ea541dd442cd8a95db50c7c0b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  window: {fileID: 1638454426}
+  notification: {fileID: 1690374249}
+  dialogueText: {fileID: 207887594}
+  dialogues:
+  - Hello Love! Would you care to join me for a lovely walk down to the beach. Just
+    kidding, lets go learn about light pollution.
+  writingSpeed: 0.1
 --- !u!1 &1296603881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,8 +1402,8 @@ GameObject:
   - component: {fileID: 1574298801}
   - component: {fileID: 1574298800}
   - component: {fileID: 1574298799}
-  - component: {fileID: 1574298804}
   - component: {fileID: 1574298803}
+  - component: {fileID: 1574298804}
   m_Layer: 0
   m_Name: Dancer
   m_TagString: Dancer
@@ -1523,10 +1550,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1574298798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4bb8af8dfcce4fc88dc24617e5c8c9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 43c70e64bb2d241aba7dd760e2081dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueScript: {fileID: 994677527}
+  WaterdialogueScript: {fileID: 1292312339}
 --- !u!1 &1604743558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,6 +1714,40 @@ CircleCollider2D:
   m_Offset: {x: 0.030820131, y: 0.011699021}
   serializedVersion: 2
   m_Radius: 0.2896042
+--- !u!1 &1638454426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759057581286960662, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 107038788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1690374249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759057581188361441, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 107038788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1703979457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759057580668055477, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+  m_PrefabInstance: {fileID: 770569749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1703979458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703979457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d97f0d2092d41119d87c3d0a9eb7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  window: {fileID: 1638454426}
+  notification: {fileID: 1690374249}
+  dialogueText: {fileID: 207887594}
+  dialogues:
+  - Hello stranger! Did you know air is a very important aspect in our life. Join
+    me and my journey to learn more about Air pollution.
+  writingSpeed: 0.1
 --- !u!1 &1755955733
 GameObject:
   m_ObjectHideFlags: 0
