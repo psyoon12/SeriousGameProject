@@ -1218,7 +1218,7 @@ MonoBehaviour:
   dialogues:
   - Hello Love! Would you care to join me for a lovely walk down to the beach. Just
     kidding, lets go learn about light pollution.
-  writingSpeed: 0.1
+  writingSpeed: 0.01
 --- !u!1 &1296603881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,7 +1747,7 @@ MonoBehaviour:
   dialogues:
   - Hello stranger! Did you know air is a very important aspect in our life. Join
     me and my journey to learn more about Air pollution.
-  writingSpeed: 0.1
+  writingSpeed: 0.01
 --- !u!1 &1755955733
 GameObject:
   m_ObjectHideFlags: 0
