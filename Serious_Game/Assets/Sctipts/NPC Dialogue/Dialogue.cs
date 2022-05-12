@@ -17,8 +17,21 @@ public class Dialogue : MonoBehaviour
     //Index on Characters
     private int charactersIndex;
     private bool started;
-    private bool waitNext;
+    private bool waitNext; 
 
+    public GameObject man;
+    public GameObject thief;
+    public GameObject dancer;
+    public GameObject monk;  
+
+    void Start() {
+        man = GameObject.FindGameObjectWithTag("Man");
+        thief = GameObject.FindGameObjectWithTag("Thief");
+        dancer = GameObject.FindGameObjectWithTag("Dancer");
+        monk = GameObject.FindGameObjectWithTag("Monk");
+
+        
+    }
     private void Awake()
     {
         ToggleNotification(false);
@@ -63,7 +76,22 @@ public class Dialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
-        SceneManager.LoadScene("LandMini");
+        
+        if (man != null){ 
+           SceneManager.LoadScene("LandMini");
+        }
+        
+         if (thief != null){ 
+           SceneManager.LoadScene("WaterMini");
+        }
+
+       if (dancer != null){ 
+           SceneManager.LoadScene("LightMini");
+        }
+
+      if (monk != null){ 
+           SceneManager.LoadScene("AirMini");
+        }
     }
 
     IEnumerator Writing()

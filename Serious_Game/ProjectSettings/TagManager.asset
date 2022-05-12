@@ -9,6 +9,10 @@ TagManager:
   - Canvas
   - Collectable
   - Thief
+  - Man
+  - Dancer
+  - Monk
+  - NPC
   layers:
   - Default
   - TransparentFX

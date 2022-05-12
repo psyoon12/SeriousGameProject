@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AirMini.unity
     guid: 37d4d6e5fae4449b08bbbd8f0bed8252
+  - enabled: 1
+    path: Assets/Scenes/HighScore.unity
+    guid: 5ceecb53e579f42e5be4eaae7aac4aa1
   m_configObjects: {}
