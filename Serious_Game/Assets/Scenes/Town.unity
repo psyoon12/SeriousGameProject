@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 797295035}
   - component: {fileID: 797295037}
   - component: {fileID: 797295036}
+  - component: {fileID: 797295038}
   m_Layer: 0
   m_Name: Thief
   m_TagString: Untagged
@@ -713,6 +714,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueScript: {fileID: 272426549}
+--- !u!114 &797295038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797295031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271a97cee6f0943b6b11abb42f0a8f54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &837338059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1255,14 @@ PrefabInstance:
     - target: {fileID: 759057580668055477, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: m_Name
       value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057581188361443, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057581188361443, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 759057582093348001, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: m_fontSize
