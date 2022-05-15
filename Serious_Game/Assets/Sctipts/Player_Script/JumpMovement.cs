@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JumpMovement : MonoBehaviour
 {
@@ -64,6 +65,10 @@ public class JumpMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Collectable"))
         {
             Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("BottomBoundary")){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

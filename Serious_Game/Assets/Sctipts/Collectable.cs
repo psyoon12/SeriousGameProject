@@ -24,6 +24,7 @@ public class Collectable : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             ScoreManager.instance.UpdateScore(collectableValue);
+            //Time.timeScale = 0f;
         }
     }
 }
