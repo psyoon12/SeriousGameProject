@@ -15,6 +15,7 @@ TagManager:
   - NPC
   - Land
   - played
+  - AI
   layers:
   - Default
   - TransparentFX

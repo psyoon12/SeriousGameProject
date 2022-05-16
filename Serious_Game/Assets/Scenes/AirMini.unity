@@ -372,6 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectableValue: 5
   audio: {fileID: 1061588963}
+  AI: {fileID: 0}
 --- !u!1 &188477250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectableValue: 5
   audio: {fileID: 1061588963}
+  AI: {fileID: 0}
 --- !u!1 &707955074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +1733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectableValue: 5
   audio: {fileID: 1061588963}
+  AI: {fileID: 0}
 --- !u!1 &963361600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,8 +3265,8 @@ GameObject:
   - component: {fileID: 1748833014}
   - component: {fileID: 1748833013}
   m_Layer: 0
-  m_Name: GameController
-  m_TagString: Untagged
+  m_Name: eControllerler
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3287,6 +3290,7 @@ MonoBehaviour:
   - {fileID: 5408806242666154900, guid: 6e658c418bdd64daeafcfe4924dbb0f8, type: 3}
   PlayerPos: {fileID: 0}
   Player: {fileID: 0}
+  newAI: {fileID: 0}
 --- !u!4 &1748833014
 Transform:
   m_ObjectHideFlags: 0

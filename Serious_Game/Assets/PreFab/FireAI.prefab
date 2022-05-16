@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1999039959547532086}
   m_Layer: 0
   m_Name: FireAI
-  m_TagString: Untagged
+  m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,6 @@ MonoBehaviour:
   PlayerPos: {fileID: 0}
   Player: {fileID: 0}
   rigid: {fileID: 0}
-  currentPos: {x: 0, y: 0, z: 0}
 --- !u!50 &3248675894725033038
 Rigidbody2D:
   serializedVersion: 4
