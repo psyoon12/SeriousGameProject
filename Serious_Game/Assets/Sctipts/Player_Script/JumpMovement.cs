@@ -8,7 +8,7 @@ public class JumpMovement : MonoBehaviour
 
     public float moveSpeed;
     float xInput, yInput;
-
+    int scoreTemp;
     public Animator animator;
 
     Rigidbody2D rb;
@@ -25,7 +25,8 @@ public class JumpMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreTemp = PersistentData.Instance.GetScore();
+        Debug.Log(scoreTemp);
     }
 
     void Update()
@@ -68,7 +69,7 @@ public class JumpMovement : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("BottomBoundary")){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("Town");
         }
     }
 

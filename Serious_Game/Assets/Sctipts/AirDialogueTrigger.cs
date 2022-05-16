@@ -63,9 +63,14 @@ public class AirDialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
-        SceneManager.LoadScene("AirMini");
+
+        //Monk
+       if (!minigamePlayed.Instance.getPlayed(3)){
+            SceneManager.LoadScene("AirMini");
+            minigamePlayed.Instance.setPlayed(3);
+        }
         
-        
+
         /*
         if (GameObject.FindGameObjectWithTag("Thief") != null){ 
            SceneManager.LoadScene("WaterMini");

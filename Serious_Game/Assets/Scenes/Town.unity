@@ -299,17 +299,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7314636420618711286, guid: 40b5736a17478481387ae7c3042c26cb, type: 3}
   m_PrefabInstance: {fileID: 1797235145}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &272426549 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
-  m_PrefabInstance: {fileID: 1413033501}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e80f4b841635e49d7b20441726568219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &272426550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 759057580668055476, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
@@ -764,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bb8af8dfcce4fc88dc24617e5c8c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueScript: {fileID: 272426549}
+  dialogueScript: {fileID: 0}
 --- !u!114 &797295038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,7 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bb8af8dfcce4fc88dc24617e5c8c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueScript: {fileID: 1009835782}
+  dialogueScript: {fileID: 1018978833}
 --- !u!61 &991969889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1025,7 +1014,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 759057580668055476, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_PrefabInstance: {fileID: 759057581140979889}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1009835782 stripped
+--- !u!114 &1018978833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3669698766330134772, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_PrefabInstance: {fileID: 759057581140979889}
@@ -1947,6 +1936,65 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 759057581286960662, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
   m_PrefabInstance: {fileID: 770569749}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1862172980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1862172982}
+  - component: {fileID: 1862172981}
+  - component: {fileID: 1862172983}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1862172981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862172980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8627c68b753f14452ac2e7a532d53e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  played: 00000000
+--- !u!4 &1862172982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862172980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.158015, y: 0.27919084, z: 0.88319755}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1862172983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862172980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258e83711789343fe805a867ff130d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeBeforeLoading: 5
 --- !u!1 &1910703186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,6 +2144,10 @@ PrefabInstance:
     - target: {fileID: 759057580668055477, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: m_Name
       value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 759057580668055477, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
+      propertyPath: m_TagString
+      value: Man
       objectReference: {fileID: 0}
     - target: {fileID: 759057581286960665, guid: b51658ea8cc75451dacd78fe14efaa75, type: 3}
       propertyPath: m_LocalPosition.x
