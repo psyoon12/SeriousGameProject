@@ -7,11 +7,10 @@ public class minigamePlayed : MonoBehaviour
 
     public static minigamePlayed Instance;
 
-    [SerializeField] GameObject[] minigame;
-    //[SerializeField] bool[] played;
+    [SerializeField] bool[] played;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (Instance == null)
         {
@@ -22,6 +21,10 @@ public class minigamePlayed : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+    }
+
+    void start(){
     }
 
     // Update is called once per frame
@@ -30,13 +33,23 @@ public class minigamePlayed : MonoBehaviour
         
     }
 
-    public void setPlayed(string tag){
-        int index;
+    public void setPlayed(int index){
+        played[index] = true;
+    }
 
-        foreach (GameObject g in minigame){
-            if (g.CompareTag(tag)){
-                g.SetActive(false);
+    public bool getPlayed(int index){
+        return played[index];
+    }
+
+    public bool gameOver(){
+        bool over = true;
+        foreach (bool item in played)
+        {
+            if(!item){
+                over = false;
             }
         }
+
+        return over;
     }
 }

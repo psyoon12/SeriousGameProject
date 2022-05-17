@@ -13,6 +13,9 @@ TagManager:
   - Dancer
   - Monk
   - NPC
+  - Land
+  - played
+  - AI
   layers:
   - Default
   - TransparentFX

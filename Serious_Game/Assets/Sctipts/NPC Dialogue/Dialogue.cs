@@ -63,9 +63,16 @@ public class Dialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
-        SceneManager.LoadScene("LandMini");
-        
-        
+        //SceneManager.LoadScene("LandMini");
+
+        //NPC Man
+        if (gameObject.tag=="Man"){
+            if (!minigamePlayed.Instance.getPlayed(0)){
+                SceneManager.LoadScene("LandMini");
+                minigamePlayed.Instance.setPlayed(0);
+            }
+        }
+
         /*
         if (GameObject.FindGameObjectWithTag("Thief") != null){ 
            SceneManager.LoadScene("WaterMini");

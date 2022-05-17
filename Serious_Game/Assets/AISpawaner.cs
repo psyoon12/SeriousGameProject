@@ -8,6 +8,7 @@ public class AISpawaner : MonoBehaviour
     [SerializeField] GameObject[] AI;
     [SerializeField] Transform PlayerPos;
     [SerializeField] GameObject Player;
+    public GameObject newAI;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,10 @@ public class AISpawaner : MonoBehaviour
     void Spwan(){
         int index = SceneManager.GetActiveScene().buildIndex - 2;
         Vector2 position = new Vector2(PlayerPos.position.x-4,PlayerPos.position.y+2);
-        Instantiate(AI[index], position, Quaternion.identity);
+        newAI = Instantiate(AI[index], position, Quaternion.identity);
+    }
+
+    public GameObject getAI(){
+        return newAI;
     }
 }

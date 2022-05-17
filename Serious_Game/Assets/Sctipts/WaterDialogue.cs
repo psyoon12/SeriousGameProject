@@ -63,8 +63,12 @@ public class WaterDialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
-        SceneManager.LoadScene("LightMini");
-        
+        //SceneManager.LoadScene("LightMini");
+        //Dancer
+        if (!minigamePlayed.Instance.getPlayed(2)){
+            SceneManager.LoadScene("LightMini");
+            minigamePlayed.Instance.setPlayed(2);
+        }
         
         /*
         if (GameObject.FindGameObjectWithTag("Thief") != null){ 

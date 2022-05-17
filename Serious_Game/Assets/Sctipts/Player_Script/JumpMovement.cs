@@ -8,7 +8,6 @@ public class JumpMovement : MonoBehaviour
 
     public float moveSpeed;
     float xInput, yInput;
-
     public Animator animator;
 
     Rigidbody2D rb;
@@ -16,6 +15,8 @@ public class JumpMovement : MonoBehaviour
     Vector2 movement;
 
     public float jumpForce;
+
+    [SerializeField] GameObject AI;
 
     public void Awake()
     {
@@ -25,7 +26,7 @@ public class JumpMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AI = AI = GameObject.FindWithTag("AI");
     }
 
     void Update()
@@ -65,11 +66,17 @@ public class JumpMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Collectable"))
         {
             Destroy(other.gameObject);
+            AI = GameObject.FindWithTag("AI");
+            AI.SetActive(false);
         }
 
         if (other.gameObject.CompareTag("BottomBoundary")){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("Town");
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        AI.SetActive(true);
     }
 
 

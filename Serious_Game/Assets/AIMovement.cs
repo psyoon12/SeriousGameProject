@@ -8,7 +8,7 @@ public class AIMovement : MonoBehaviour
     public Transform PlayerPos;
     public GameObject Player;
     [SerializeField] Rigidbody2D rigid;
-    float MoveSpeed = 3.0f;
+    float MoveSpeed = 5.0f;
     float distance = 1;
 
     const int pointOff = -1;

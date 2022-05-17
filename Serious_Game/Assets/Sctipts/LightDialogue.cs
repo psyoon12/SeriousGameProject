@@ -63,7 +63,13 @@ public class LightDialogue : MonoBehaviour
         waitNext = false;
         StopAllCoroutines();
         ToggleWindow(false);
-        SceneManager.LoadScene("LightMini");
+        //SceneManager.LoadScene("LightMini");
+
+        //Monk
+        if (!minigamePlayed.Instance.getPlayed(4)){
+            SceneManager.LoadScene("LightMini");
+            minigamePlayed.Instance.setPlayed(4);
+        }
         
         
         /*
