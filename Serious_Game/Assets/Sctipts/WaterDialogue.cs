@@ -66,7 +66,7 @@ public class WaterDialogue : MonoBehaviour
         //SceneManager.LoadScene("LightMini");
         //Dancer
         if (!minigamePlayed.Instance.getPlayed(2)){
-            SceneManager.LoadScene("LightMini");
+            SceneManager.LoadScene("WaterMini");
             minigamePlayed.Instance.setPlayed(2);
         }
         
